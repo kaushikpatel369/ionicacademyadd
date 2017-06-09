@@ -1,0 +1,7 @@
+{
+"name": "Ionic Academy",
+"description": "A simple Ionic academy",
+"repository":"https://github.com/kaushikpatel369/ionicacademyadd.git",
+"logo":"http://node-js-sample.herokuapp.com/node.svg",
+"keywords": ["ionic", "express", "static"]
+}

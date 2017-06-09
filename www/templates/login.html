@@ -1,0 +1,49 @@
+    <ion-view view-title="Login"> 
+      <ion-content style="background:#003355">
+	    <div style="padding-bottom:95px;text-align:center">
+			
+		</div>
+        <div style="text-align:center">
+			<h2 style="color:#9896F1"><strong>SUBMIT<br>notes</strong></h2>
+		</div>
+		<div class="list card carddesign">
+			<label class="item item-input" style="background:#DEFCF9;text-align:center" >
+				   <select  name="option"  ng-value="value" ng-model="data.category" style="background:#C0D9E5">
+						<option value="" disabled selected>Category</option>
+						<option value="CSS">Ionic CSS</option>
+						<option value="JS">Ionic Javascripts</option>
+						<option value="EXAMPLE">Ionic Example</option>
+					</select>
+			</label>
+		</div>
+		<div class="list card carddesign">
+		  <label class="item item-input item-floating-label" style="background:#C0D9E5">
+			<span class="input-label"><strong><u> Heading</u></strong></span>
+			<input class="ic" type="text" placeholder="Heading" ng-model="data.heading">
+		  </label>
+		</div>
+		<div class="list card carddesign">
+		  <label class="item item-input item-label" style="background:#C0D9E5">
+			<input type="file" 
+            ng-model="localFile"
+            id="store-input"
+            accept="image/*"
+            onchange="angular.element(this).scope().localUpload(this)"
+            />
+		 </label>
+		</div>
+		 <div class="list card carddesign">
+		  <label class="item item-input item-floating-label" style="background:#C0D9E5">
+			<span class="input-label"><strong><u> Description</u></strong></span>
+			<textarea ng-model="data.desc" placeholder="Description here" style="background:#C0D9E5"></textarea>
+		  </label>
+		</div>
+		
+		<div class="padding carddesign">
+            <button class="btn1 button button-full button-stable carddesign" ng-click="entry(data)" style="background:#9896F1"><font color="#2f2a47"> <b>Submit</b></font></button>
+        </div>
+		
+		
+      </ion-content>
+    </ion-view>
+ 
